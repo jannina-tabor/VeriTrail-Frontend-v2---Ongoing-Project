@@ -27,12 +27,12 @@ So, at this stage, the frontend serves as the foundation and visual prototype of
 
 **Project Status**
 
-Internship Deliverable: _ Frontend prototype and system foundation_
+Internship Deliverable: _Frontend prototype and system foundation_
 
 Current Stage: _Frontend prototype / pre-backend integration_
 
-Backend: _ Not yet implemented_
+Backend: _Not yet implemented_
 
-Database: _ Not yet integrated_
+Database: _Not yet integrated_
 
 This project can be continued by connecting the existing frontend to the planned backend, database, authentication, and operational workflows.
