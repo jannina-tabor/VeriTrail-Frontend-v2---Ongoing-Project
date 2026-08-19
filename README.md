@@ -26,9 +26,13 @@ I might have overlooked some features that are still not completed, alas, the fi
 So, at this stage, the frontend serves as the foundation and visual prototype of the system. The backend and database will still need to be developed and connected to make VeriTrail a fully functional application.
 
 **Project Status**
+
 Internship Deliverable: _ Frontend prototype and system foundation_
+
 Current Stage: _Frontend prototype / pre-backend integration_
+
 Backend: _ Not yet implemented_
+
 Database: _ Not yet integrated_
 
 This project can be continued by connecting the existing frontend to the planned backend, database, authentication, and operational workflows.
