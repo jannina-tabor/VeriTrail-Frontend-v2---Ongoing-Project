@@ -9,33 +9,35 @@ The project is not yet a complete working system.
 What we have now is mainly the frontend prototype, which demonstrates how VeriTrail is supposed to look and how the main user interactions and workflows are expected to work.
 
 There is still a lot left to do, especially:
-__Backend development
+_Backend development_
 
-Database integration
+_Database integration_
 
-Real authentication and authorization
+_Real authentication and authorization_
 
-API integration
+_API integration_
 
-Actual request processing
+_Actual request processing_
 
-Persistent chain-of-custody records
+_Persistent chain-of-custody records_
 
-Notifications
+_Notifications_
 
-Incident and dispute management
+_Incident and dispute management_
 
-Real GPS tracking
+_Real GPS tracking_
 
-External courier integration
+_External courier integration_
 
-Complete role-based workflows
+_Complete role-based workflows_
 
-Communication hub styles
+_Communication hub styles_
 
-Testing and frontend-backend integration_
-_
+_Testing and frontend-backend integration_
+
+
 I might have overlooked some features that are still not completed, alas, the files are here to be checked.
+
 So, at this stage, the frontend serves as the foundation and visual prototype of the system. The backend and database will still need to be developed and connected to make VeriTrail a fully functional application.
 
 **Project Status**
