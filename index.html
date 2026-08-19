@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VeriTrail — Enterprise Asset Transfer Platform</title>
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container nav">
+
+        <a href="index.html" class="brand" onclick="window.location.reload(); return false;">
+            <img src="assets\VeriTrail_Logo.png" alt="VeriTrail Logo">
+            <div>
+                <div class="brand-name">Veri<span>Trail</span></div>
+                <div class="tagline">The Verifiable Logistics Chain</div>
+            </div>
+        </a>
+
+        <button class="theme-btn" id="themeToggle" aria-label="Toggle theme"></button>
+
+    </div>
+</header>
+
+<main>
+    <section class="hero container">
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                Enterprise asset transfer platform
+            </div>
+
+            <h1>
+                Enterprise asset transfer with
+                <span class="accent">complete chain-of-custody visibility</span>
+            </h1>
+
+            <p>
+                VeriTrail enables organizations to manage internal asset transfers,
+                monitor custody transitions, verify delivery acceptance, and maintain
+                a permanent audit trail across every operational request.
+            </p>
+
+            <div class="hero-actions">
+                <button type="button" class="btn btn-primary" onclick="openAuthModal('signup', 'requester')">
+                    Sign up to workspace
+                </button>
+
+                <a href="track.html" class="btn btn-secondary">
+                    Track a request
+                </a>
+            </div>
+
+            <div class="custody-flow">
+
+                <div class="flow-node">
+                    <div class="flow-dot"></div>
+                    <span>Requester</span>
+                </div>
+
+                <div class="flow-line"></div>
+
+                <div class="flow-node">
+                    <div class="flow-dot"></div>
+                    <span>Handler</span>
+                </div>
+
+                <div class="flow-line"></div>
+
+                <div class="flow-node">
+                    <div class="flow-dot"></div>
+                    <span>Messenger</span>
+                </div>
+
+                <div class="flow-line"></div>
+
+                <div class="flow-node">
+                    <div class="flow-dot"></div>
+                    <span>Receiver</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="hero-card">
+
+            <h3>Track a request</h3>
+
+            <p>
+            Enter a request reference number to view its custody timeline,
+            delivery progress, and verification history.
+            </p>
+
+            <input
+            class="input"
+            type="text"
+            placeholder="TRX-2026-000145">
+
+            <button class="btn btn-track">
+            View request trail
+            </button>
+
+            <div class="preview">
+
+            <div class="preview-head">
+                <div class="preview-id">TRX-2026-000145</div>
+                <div class="status">In transit</div>
+            </div>
+
+            <div class="preview-grid">
+                <div class="preview-item">
+                <div class="label">Current stage</div>
+                <div class="value">In transit</div>
+                </div>
+
+                <div class="preview-item">
+                <div class="label">Latest custody update</div>
+                <div class="value">Picked up by internal messenger</div>
+                </div>
+
+                <div class="preview-item">
+                <div class="label">Destination</div>
+                <div class="value">Manila headquarters</div>
+                </div>
+            </div>
+
+            <div class="progress">
+                <div class="progress-bar"><span></span></div>
+                <div class="progress-text">
+                <span>Request trail</span>
+                <span>68% complete</span>
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="trust container">
+
+        <div class="trust-grid">
+
+            <div class="trust-item card">
+                <h4>Verifiable records</h4>
+                <p>Every custody transfer is permanently recorded.</p>
+            </div>
+
+            <div class="trust-item card">
+                <h4>Operational tracking</h4>
+                <p>Monitor request progress across all workflow stages.</p>
+            </div>
+
+            <div class="trust-item card">
+                <h4>Supervisor oversight</h4>
+                <p>Approvals, incidents, and replacement requests.</p>
+            </div>
+
+            <div class="trust-item card">
+                <h4>Audit-ready history</h4>
+                <p>Complete request timelines and accountability records.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section container">
+
+        <h2 class="section-title">How VeriTrail works</h2>
+
+        <p class="section-sub">
+            VeriTrail is built around a unified request lifecycle and a verifiable
+            chain of custody, ensuring that every transfer remains traceable,
+            accountable, and auditable.
+        </p>
+
+        <div class="workflow-grid">
+
+            <div class="workflow-card card">
+                <div class="step">01</div>
+                <h3>Request initiation</h3>
+                <p>
+                    Create an asset transfer request with inventory details,
+                    destination office, and approval routing.
+                </p>
+            </div>
+
+            <div class="workflow-card card">
+                <div class="step">02</div>
+                <h3>Custody tracking</h3>
+                <p>
+                    Record every custody transition from handler to messenger
+                    to receiver with timestamps and accountability history.
+                </p>
+            </div>
+
+            <div class="workflow-card card">
+                <div class="step">03</div>
+                <h3>Verification</h3>
+                <p>
+                    Complete delivery through inspection, digital acknowledgment,
+                    dispute management, and permanent audit documentation.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section container">
+
+        <div class="workspace-panel card">
+
+            <div class="workspace-header">
+                <h2>Access your VeriTrail workspace</h2>
+                <p>
+                    Sign in to continue to your operational or administrative workspace.
+                    Your assigned role determines the tools and workflow available within the system.
+                </p>
+            </div>
+
+            <div class="workspace-grid">
+
+                <div class="workspace-card">
+
+                    <h3>Operational workspace</h3>
+
+                    <p>For day-to-day logistics operations</p>
+
+                    <ul>
+                        <li>Requester</li>
+                        <li>Handler</li>
+                        <li>Messenger</li>
+                        <li>Receiver</li>
+                    </ul>
+
+                    <button type="button" class="btn btn-primary" onclick="openAuthModal('signin', 'requester')">
+                        Sign in to operational workspace
+                    </button>
+
+                </div>
+
+                <div class="workspace-card">
+
+                    <h3>Supervisor & IT administration</h3>
+
+                    <p>Authorized organizational access</p>
+
+                    <ul>
+                        <li>Request approvals</li>
+                        <li>Incident investigations</li>
+                        <li>User administration</li>
+                        <li>System oversight</li>
+                    </ul>
+
+                    <button type="button" class="btn btn-secondary" onclick="openAuthModal('signin', 'supervisor')">
+                        Sign in to administrative workspace
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <strong>VeriTrail</strong>
+        <p>Enterprise Asset Transfer & Chain-of-Custody Management Platform</p>
+        <p>Verifiable records • Operational accountability • Audit-ready history</p>
+    </div>
+</footer>
+
+
+<div class="modal-overlay" id="authModalOverlay" onclick="if(event.target===this) closeAuthModal()">
+  <div class="modal-card" style="max-width: 460px; background: var(--panel, #FFFDF8); border: 1px solid var(--line, rgba(83,96,105,0.22)); border-radius: 24px; padding: 32px; box-shadow: 0 25px 50px rgba(31,64,55,0.15);">
+    
+    <div style="display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 24px; border-bottom: 1px solid var(--line); padding-bottom: 16px;">
+      <div>
+        <h3 id="authModalTitle" style="font-family: 'Merriweather', serif; margin: 0 0 6px; font-size: 1.35rem; font-weight: 700; color: var(--deep, #1F4037);">Sign In to VeriTrail</h3>
+        <p style="margin: 0; font-size: 0.8rem; color: var(--muted);" id="authModalSub">Enter your operational credentials to continue.</p>
+      </div>
+      <button type="button" onclick="closeAuthModal()" style="background: var(--cream-2, #F1EBDC); border: none; width: 32px; height: 32px; border-radius: 50%; font-size: 1rem; cursor: pointer; color: var(--ink); display: flex; align-items: center; justify-content: center; transition: background 0.2s;">✕</button>
+    </div>
+
+    <form id="signInForm" onsubmit="event.preventDefault(); executeBlueprintSignIn();" style="display: flex; flex-direction: column; gap: 16px;">
+      <div>
+        <label class="form-label" style="font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); display: block; margin-bottom: 6px;">Target Workspace Role</label>
+        <select id="signInRoleSelect" class="vt-input vt-select" style="width: 100%; padding: 11px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--cream, #FBF7EF); color: var(--ink);" onchange="toggleAdminBypassField(this.value)">
+          <option value="requester">Requester Workspace</option>
+          <option value="handler">Handler Workspace</option>
+          <option value="messenger">Messenger Workspace</option>
+          <option value="receiver">Receiver Workspace</option>
+          <option value="supervisor">Supervisor Dashboard</option>
+          <option value="it-admin">IT Administrator</option>
+        </select>
+      </div>
+
+      <div id="adminBypassGroup" style="display: none;">
+        <label class="form-label" style="font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); display: block; margin-bottom: 6px;">Administrative Bypass / ID Code</label>
+        <input type="text" id="signInAdminCode" class="vt-input" placeholder="Enter security access code" style="width: 100%; padding: 11px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--cream, #FBF7EF);">
+      </div>
+
+      <div>
+        <label class="form-label" style="font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); display: block; margin-bottom: 6px;">Username</label>
+        <input type="text" id="signInUsername" class="vt-input" placeholder="Enter username..." required style="width: 100%; padding: 11px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--cream, #FBF7EF);">
+      </div>
+
+      <div>
+        <label class="form-label" style="font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); display: block; margin-bottom: 6px;">Password</label>
+        <div style="position: relative; display: flex; align-items: center;">
+            <input type="password" id="signInPassword" class="vt-input" placeholder="Enter password..." required style="width: 100%; padding: 11px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--cream, #FBF7EF);">
+            <button type="button" onclick="togglePasswordVisibility('signUpPassword', 'signUpEyeIcon')" style="position: absolute; right: 12px; background: none; border: none; cursor: pointer; color: var(--muted); display: flex; align-items: center; padding: 0;" title="Show/Hide password">
+              <svg id="signUpEyeIcon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-primary" style="width: 100%; padding: 13px; border-radius: 999px; background: var(--deep, #1F4037); color: #fff; font-weight: 700; margin-top: 8px; border: none; cursor: pointer;">Sign In</button>
+      
+      <div style="text-align: center; font-size: 0.8rem; color: var(--muted); margin-top: 8px;">
+        <span>Need an operational account?</span> 
+        <a href="javascript:void(0);" onclick="switchAuthTab('signup')" style="color: var(--terracotta, #C47A57); font-weight: 700; text-decoration: none; margin-left: 4px;">Sign Up</a>
+      </div>
+    </form>
+
+    <form id="signUpForm" onsubmit="event.preventDefault(); executeBlueprintSignUp();" style="display: none; flex-direction: column; gap: 16px;">
+      <div style="font-size: 0.78rem; color: var(--muted); background: rgba(148,166,132,0.12); padding: 10px 14px; border-radius: 10px; border-left: 3px solid var(--sage);">
+        Standard registration requires corporate employee ID verification.
+      </div>
+      
+      <div>
+        <label class="form-label" style="font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); display: block; margin-bottom: 6px;">Employee ID <span style="color: var(--terracotta);">*</span></label>
+        <div style="display: flex; gap: 8px;">
+          <input type="text" id="signUpEmpId" class="vt-input" placeholder="e.g. EMP-2026-042" required style="flex: 1; padding: 11px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--cream, #FBF7EF);">
+          <button type="button" class="btn btn-secondary" onclick="verifyEmployeeRoster()" style="padding: 0 16px; border-radius: 12px; background: var(--sage); color: #fff; border: none; font-weight: 700; cursor: pointer;">Verify</button>
+        </div>
+      </div>
+
+      <div id="signUpDetailsContainer" style="display: none; flex-direction: column; gap: 14px; border-top: 1px dashed var(--line); padding-top: 14px;">
+        <div>
+          <label class="form-label" style="font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); display: block; margin-bottom: 6px;">Full Name</label>
+          <input type="text" id="signUpFullName" class="vt-input" readonly style="width: 100%; padding: 11px 14px; border-radius: 12px; border: 1px solid var(--line); opacity: 0.85; background: var(--cream-2, #F1EBDC);">
+        </div>
+
+        <div>
+          <label class="form-label" style="font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); display: block; margin-bottom: 6px;">Choose Username</label>
+          <input type="text" id="signUpUsername" class="vt-input" placeholder="Enter username" required style="width: 100%; padding: 11px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--cream, #FBF7EF);">
+        </div>
+
+        <div>
+          <label class="form-label" style="font-family: 'Montserrat', sans-serif; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); display: block; margin-bottom: 6px;">Create Password</label>
+          <div style="position: relative; display: flex; align-items: center;">
+            <input type="password" id="signUpPassword" class="vt-input" placeholder="••••••••••••" required style="width: 100%; padding: 11px 40px 11px 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--cream, #FBF7EF);">
+            <button type="button" onclick="togglePasswordVisibility('signUpPassword', 'signUpEyeIcon')" style="position: absolute; right: 12px; background: none; border: none; cursor: pointer; color: var(--muted); display: flex; align-items: center; padding: 0; z-index: 5;" title="Show/Hide password">
+              <svg id="signUpEyeIcon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 13px; border-radius: 999px; background: var(--deep, #1F4037); color: #fff; font-weight: 700; margin-top: 6px; border: none; cursor: pointer;">Complete Registration</button>
+      </div>
+
+      <div style="text-align: center; font-size: 0.8rem; color: var(--muted); margin-top: 6px;">
+        <span>Already have an account?</span> 
+        <a href="javascript:void(0);" onclick="switchAuthTab('signin')" style="color: var(--terracotta, #C47A57); font-weight: 700; text-decoration: none; margin-left: 4px;">Sign In</a>
+      </div>
+    </form>
+
+  </div>
+</div>
+
+<script src="js/theme.js"></script>
+<script src="js/index.js"></script>
+<script src="js/gateway.js"></script>
+
+</body>
+</html>
